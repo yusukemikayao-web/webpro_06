@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>商品一覧</title>
+</head>
+<body>
+    <h1>商品管理システム</h1>
+    
+    <h3>新規登録</h3>
+    <form action="/items/add" method="POST">
+        <input type="text" name="name" placeholder="商品名" required>
+        <input type="text" name="price" placeholder="価格" required>
+        <button type="submit">登録</button>
+    </form>
+    <hr>
+    <table border="1">
+        <tr><th>ID</th><th>タイトル</th><th>操作</th></tr>
+        <% for( let row of data ) { %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><a href="/items/<%= row.id %>"><%= row.name %></a></td>
+            <td><a href="/items/delete/<%= row.id %>">削除</a></td>
+        </tr>
+        <% } %>
+    </table>
+    <br>
+    <a href="/books">図書管理へ</a> | <a href="/tasks">タスク管理へ</a>
+    <hr>
+    <a href="/">ポータル画面（ホーム）へ戻る</a>
+</body>
+</html>

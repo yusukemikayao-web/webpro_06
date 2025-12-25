@@ -1,5 +1,5 @@
 {
-  "name": "node-http-server",
+  "name": "http-server",
   "version": "1.0.0",
   "description": "Node.js example server starter project",
   "main": "src/index.js",
@@ -8,7 +8,18 @@
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.22.1"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusukemikayao-web/webpro_06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yusukemikayao-web/webpro_06/issues"
+  },
+  "homepage": "https://github.com/yusukemikayao-web/webpro_06#readme"
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Webアプリ ポータル</title>
+    <style>
+        .menu-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            color: black;
+            background-color: #f9f9f9;
+        }
+        .menu-card:hover { background-color: #e0e0e0; }
+    </style>
+</head>
+<body>
+    <h1>Webプログラミング 課題ポータル</h1>
+    <p>以下のシステムを選択してください：</p>
+
+    <a href="/books" class="menu-card">
+        <h2>図書管理</h2>
+        <p>本の登録と一覧表示</p>
+    </a>
+
+    <a href="/tasks" class="menu-card">
+        <h2>タスク管理</h2>
+        <p>ToDoの管理</p>
+    </a>
+
+    <a href="/items" class="menu-card">
+        <h2>商品在庫管理</h2>
+        <p>在庫データの操作</p>
+    </a>
+</body>
+</html>
